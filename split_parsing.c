@@ -6,7 +6,7 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 19:11:37 by sma               #+#    #+#             */
-/*   Updated: 2021/07/03 20:06:01 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/03 21:00:56 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,10 @@ void			run_cmd(char **argv, char **envp, t_data *data)
 	char		**envir;
 
 	envir = get_path(envp);
+	if (data->path != 0)
+		free(data->path);
+	if (data->cmd != 0)
+		split_free(data->cmd);
 	while (data->count < 4)
 	{
 		data->cmd = ft_split(argv[data->count], ' ');

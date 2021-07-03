@@ -6,7 +6,7 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/29 18:05:36 by sma               #+#    #+#             */
-/*   Updated: 2021/07/03 20:02:34 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/03 21:02:32 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ void			parent_p(char **argv, char **envp, t_data *data, int fd[2])
 void			data_init(t_data *data)
 {
 	data->count = 2;
+	data->path = 0;
+	data->cmd = 0;
 }
 
 int				check_arg(char **argv)
