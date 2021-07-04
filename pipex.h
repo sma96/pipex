@@ -6,7 +6,7 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 19:11:59 by sma               #+#    #+#             */
-/*   Updated: 2021/07/03 19:51:38 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/04 16:35:35 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include <fcntl.h>
 # include <unistd.h>
-# include <sys/wait.h>
 # include <stdio.h>
+# include <sys/wait.h>
 # include "./libft/libft.h"
 
 typedef	struct		s_data
